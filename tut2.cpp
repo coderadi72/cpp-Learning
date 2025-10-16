@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+//#include <string>
 
 using namespace std;
 typedef string lol;
@@ -59,9 +59,15 @@ cake=r+a;
         fan= u%l;
     
         jam=u+tree-cake*sum/k;
+      
+          string myname="mera_name_kya_ha"; 
 
 
 
+
+    cout<<"harsh mera beta ha" <<endl;
+     cin>>myname;
+      cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
 cout<<fcuk<<endl;
 cout<<name1<<endl;
       cout<<hi<<endl;
