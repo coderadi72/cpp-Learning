@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-//#include <string>
+#include <string>
 
 using namespace std;
 typedef string lol;
@@ -20,8 +20,8 @@ int main ()
 {
      
        int a,d,sum, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float price,book,r,k,fan, cake,fcuk, tree,jam;//decimal
-      char x,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
+      float price,umi,book,r,k,fan, cake,fcuk, tree,jam;//decimal
+      char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
       
@@ -29,7 +29,7 @@ int main ()
       
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
-      
+      mr=(bool)10;
       a = 99;
       d = 123; 
      u=9033;
@@ -61,18 +61,18 @@ cake=r+a;
         jam=u+tree-cake*sum/k;
       
           string myname="mera_name_kya_ha"; 
+            umi=(int)4789.0987;
 
-
-
-
+cout<<mr<<endl;
+cout<<umi<<endl;
     cout<<"harsh mera beta ha" <<endl;
-     cin>>myname;
-      cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
+    //cin>>myname;
+      //cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
 cout<<fcuk<<endl;
 cout<<name1<<endl;
       cout<<hi<<endl;
                  cout<<tree<<endl;
-                 cout<<my_name<<endl;   
+                 cout<<my_name<<endl;  
 cout<<bro<<endl;
               cout<<apple<<endl;
                 cout<<pie<<endl;
@@ -102,12 +102,5 @@ cout<<book<<endl;
 cout<<cake<<endl;
     cout<<fan<<endl;
              cout<<jam<<endl;
-  
-  
-  
-  
-  
-  
-  
-    return 0;
-}
+   return 0 ;
+  } 
