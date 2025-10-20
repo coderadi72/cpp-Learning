@@ -22,7 +22,7 @@ int main ()
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
       mr=(bool)10;//yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
-       sale_price=price-(price*(float)discount/100);
+       
       a = 99;
       d = 123; 
      u=9033;
@@ -59,8 +59,8 @@ cake=r+a;
 cout<<mr<<endl;
 cout<<umi<<endl;
     cout<<"harsh mera beta ha" <<endl;
-    //cin>>myname;
-      //cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
+    getline(cin,myname);
+      cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
 cout<<fcuk<<endl;
 cout<<name1<<endl;
       cout<<hi<<endl;
