@@ -21,14 +21,14 @@ int main ()
       
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
-      mr=(bool)10;//yaha hum log inplicet use kar rahe ha implesit msa hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha 
-       sale_price=price/(float)discount*100;
+      mr=(bool)10;//yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
+       sale_price=price-(price*(float)discount/100);
       a = 99;
       d = 123; 
      u=9033;
       age=16;
       year=2025;
-      day=1.8;
+      day=1.8;// yaha hum log implicit fxn use kar rahe ha is ma system apne ape chamge kar deta ha jaisa yaaha float ko int ma change kar diya 
    l=234;
       sum =a+d;
      pri =6767.98;
@@ -97,8 +97,10 @@ cout<<cake<<endl;
              cout<<jam<<endl;
           cout<<"please enter your orignal price"<<endl; 
              cin>>price;
-        cin>>discount;
-       cout<<sale_price<<endl;
+             cout<<"please enter your discount percentage"<<endl;
+        cin>>discount;    
+        sale_price=price-(price*(float)discount/100);
+        cout<<"the final sale price ="<<sale_price<<endl;
         
 
 
