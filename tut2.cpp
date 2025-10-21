@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include<iomanip>
+
+
 
 using namespace std;
 typedef string lol;
@@ -53,22 +56,36 @@ cake=r+a;
     
         jam=u+tree-cake*sum/k;
       
-          string myname,yourname ; 
+          string myage,yourname,username; 
             umi=(int)4789.0987;
          //cout(ise program ko hum ide liya use karte ha ki hum loog yaha output da saka )
          //cin (is ka hum log isa liya karta ha ki hum log input da sa ka )
  cout<<"hello"<<endl;
        //getline hum log is liya use karte ha ki jab bhi hum log input da to compiler space or enter ko ek input ki tarh treat nahi kare or hum log ho dushra cin compile ma dikat na ho 
+       
+       cout<<"i am aditya parkash and you"<<endl;
        getline(cin,yourname);
-       cout<<"tumhara name "<< yourname<<" hai"<<endl;
-cout<<mr<<endl;
-cout<<umi<<endl;
-    cout<<"harsh mera beta ha" <<endl;
-    //cin.ignore();// ya ignore kar data ha garbage input ko 
-  getline(cin,myname);
+       cout<<"hello  "<< yourname<<" how are you"<<endl;
 
-      cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
-cout<<fcuk<<endl;
+ 
+    //cin.ignore();// ya ignore kar data ha garbage input ko 
+       
+    
+    cout<< "i am 18 year old and you"<<endl;
+    getline(cin,myage); 
+         cout<<"i am "<<myage<<" year old"<<endl;
+    
+
+          cout<<"tumhara username kya ha"<<endl;
+      getline(cin>>ws,username);
+      cout<<"mera username "<<username<<"ya ha "<<endl;
+      
+
+   
+      cout<<"harsh mera beta ha" <<endl;
+     cout<<mr<<endl;
+cout<<umi<<endl; 
+     cout<<fcuk<<endl;
 cout<<name1<<endl;
       cout<<hi<<endl;
                  cout<<tree<<endl;
@@ -106,7 +123,11 @@ cout<<cake<<endl;
              cin>>price;
              cout<<"please enter your discount percentage"<<endl;
         cin>>discount;    
+       
         sale_price=price-(price*(float)discount/100);
+       
+        cout<<fixed<<setprecision(21);
+        
         cout<<"the final sale price ="<<sale_price<<endl;
         
 
