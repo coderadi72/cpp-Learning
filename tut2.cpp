@@ -53,13 +53,20 @@ cake=r+a;
     
         jam=u+tree-cake*sum/k;
       
-          string myname="mera_name_kya_ha"; 
+          string myname,yourname ; 
             umi=(int)4789.0987;
-         
+         //cout(ise program ko hum ide liya use karte ha ki hum loog yaha output da saka )
+         //cin (is ka hum log isa liya karta ha ki hum log input da sa ka )
+ cout<<"hello"<<endl;
+       //getline hum log is liya use karte ha ki jab bhi hum log input da to compiler space or enter ko ek input ki tarh treat nahi kare or hum log ho dushra cin compile ma dikat na ho 
+       getline(cin,yourname);
+       cout<<"tumhara name "<< yourname<<" hai"<<endl;
 cout<<mr<<endl;
 cout<<umi<<endl;
     cout<<"harsh mera beta ha" <<endl;
-    getline(cin,myname);
+    //cin.ignore();// ya ignore kar data ha garbage input ko 
+  getline(cin,myname);
+
       cout<<"rajao ka raja sabsa ache "<<myname<<"  superhero no one"<<endl;
 cout<<fcuk<<endl;
 cout<<name1<<endl;
