@@ -3,7 +3,7 @@
 #include <string>
 #include<iomanip>
 #include<algorithm>
-
+#include<cmath>
 
 using namespace std;
 typedef string lol;
@@ -14,8 +14,8 @@ using king = char;
 int main ()
 {
      
-       int a,d,sum,price,discount, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,sale_price,umi,book,r,k,fan,mat, cake,fcuk, tree,jam;//decimal
+       int a,d,sum,price, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
+      float pri,sale_price,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -112,7 +112,7 @@ cout<<p+a<<endl;
       cout << year << endl;
      cout << age<< endl;
     cout << day << endl;
-  cout<<price<<endl;
+  cout<<pri<<endl;
   cout<<k<<endl;
   cout<<r<<endl;
   cout<<x<<endl;
@@ -134,14 +134,29 @@ cout<<p+a<<endl;
              cout<<"please enter your discount percentage"<<endl;
                     cin>>discount;    
        
-                       sale_price=price-(price*(float)discount/100);
+                       sale_price=price-(price*discount/100);
        
-                        cout<<fixed<<setprecision(21);
+                        cout<<fixed<<setprecision(8);
         
         cout<<"the final sale price ="<<sale_price<<endl;
-        
-    cout<<" write your no"<<endl;
+        cin.ignore();
+    cout<<" write your no. "<<endl;
+        cin >>num1;
+    
+        cout<<"write your second no. "<<endl;
+          cin>>num2;
+
+          winner_num= max(num1,num2);
+          losser_num= min(num1,num2); 
+ cout<<fixed<<setprecision(8);
+          cout<<"the winner is "<<winner_num<<endl;
+          cout<<"the losser is "<<losser_num<<endl;
 
 
+
+
+
+
+          
    return 0 ;
   } 
