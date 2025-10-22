@@ -15,7 +15,7 @@ int main ()
 {
      
        int a,d,sum,price, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,sale_price,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
+      float pri,an, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -29,11 +29,11 @@ int main ()
       l=234;
       pri =6767.98;
       r=76.67;
-    
+    an=round(198.978145);
       k=89.97532345678;
       x='1';
       f='l';
-  
+  ant=abs(-45);
      e='b';
      qw='%';
      p='a';
@@ -87,12 +87,21 @@ int main ()
       
         cout<<mat<<" is greater in cake and fcuk"<<endl;
          
-      cout<<"harsh mera beta ha" <<endl;
+        cout<<"give me a no. i will give you square root "<<endl;
+         cin>>given_no;
+         value=sqrt(given_no);
+         cout<<"your squareroot is "<< value<<endl;
+      
+      
+      
+      
+         cout<<"harsh mera beta ha" <<endl;
      cout<<mr<<endl;
 cout<<umi<<endl; 
 cout<<fcuk<<endl;
 cout<<name1<<endl;
       cout<<hi<<endl;
+         cout<<ant<<endl;
                  cout<<tree<<endl;
                  cout<<my_name<<endl;  
                 cout<<bro<<endl;
@@ -100,6 +109,7 @@ cout<<name1<<endl;
                 cout<<pie<<endl;
           cout<<"i can eat "<<inf<<" chicken"<<endl;
           cout<<name1<<endl;
+          cout<<an<<endl;
 cout<<name2<<endl;  
 cout<<name3<<endl; 
 cout<<m<<endl; 
@@ -152,11 +162,33 @@ cout<<p+a<<endl;
           cout<<"the winner is "<<winner_num<<endl;
           cout<<"the losser is "<<losser_num<<endl;
 
+       cout<<"your base no. for power"<<endl;
+       cin>>alpha;
+       
+       cout<<"your power no. is "<<endl;
+       cin>>beta;
+         
+       gaama= pow(alpha,beta);
+      
+       cout<<"the answer power is "<< gaama<<endl;
 
 
+      sqrrootn1= sqrt(alpha);
+        
+          cout<<"square root of alpha "<< endl;
+           cout<<sqrrootn1<<endl;
+
+           sqrrootn2= sqrt(beta);
+
+             cout<<"square root of beta "<<endl;
+               cout<< sqrrootn2<<endl;
+
+               sum_square_roots = (sqrrootn1+sqrrootn2);
+                 
+               power_of_sum=sqrt(sum_square_roots);
+          cout<<"power of sum of square root and power"<<endl;
+             cout<<power_of_sum<<endl;
 
 
-
-          
    return 0 ;
   } 
