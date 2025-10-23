@@ -15,7 +15,7 @@ int main ()
 {
      
        int a,d,sum,price, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,an, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
+      float pri,an,sum_of_base_or_hight,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -29,11 +29,11 @@ int main ()
       l=234;
       pri =6767.98;
       r=76.67;
-    an=round(198.978145);
+    an=round(198.978145);// round up value daga jo tumm har decmal ka round up hoga
       k=89.97532345678;
       x='1';
       f='l';
-  ant=abs(-45);
+  ant=abs(-45);// absolut value da ga jo tum hare -ve value ka +ve value hoga 
      e='b';
      qw='%';
      p='a';
@@ -144,9 +144,9 @@ cout<<p+a<<endl;
              cout<<"please enter your discount percentage"<<endl;
                     cin>>discount;    
        
-                       sale_price=price-(price*discount/100);
+                       sale_price=price-(price*discount/100); //yaha hum formula likhe ha discount ka bad sale price nikal naka
        
-                        cout<<fixed<<setprecision(8);
+                        cout<<fixed<<setprecision(8);// yaha hum flote ko instuction darahr ki wo decimal ka 8 digit tak hum ko value da  
         
         cout<<"the final sale price ="<<sale_price<<endl;
         cin.ignore();
@@ -156,9 +156,11 @@ cout<<p+a<<endl;
         cout<<"write your second no. "<<endl;
           cin>>num2;
 
-          winner_num= max(num1,num2);
-          losser_num= min(num1,num2); 
- cout<<fixed<<setprecision(8);
+          winner_num= max(num1,num2);// max ka matalb ha ki ab agar tum do no. ko campare karo to tum ko un dono ma morethane kon ha bata daga 
+          losser_num= min(num1,num2); //min ka matlab hai ki ab agar tum do no ko compare karo to tum ko un ma less than kon ha pata chal jayaga 
+ 
+          cout<<fixed<<setprecision(8);
+        
           cout<<"the winner is "<<winner_num<<endl;
           cout<<"the losser is "<<losser_num<<endl;
 
@@ -168,12 +170,12 @@ cout<<p+a<<endl;
        cout<<"your power no. is "<<endl;
        cin>>beta;
          
-       gaama= pow(alpha,beta);
+       gaama= pow(alpha,beta);// pow fxn ma jab bhi hum log koi (base,power) dalenga ise order ma tab wo hum log ko square root nikal ka dega dhayan dena ki power kitna bhi dal sakte par wo jayada bara nhi hona chiya nhi to inf daga or power kuch bhi ho saktaha square mean 2 hi hona jaruri nhi ha   
       
        cout<<"the answer power is "<< gaama<<endl;
 
 
-      sqrrootn1= sqrt(alpha);
+      sqrrootn1= sqrt(alpha);//sqrt fxn ma jab bhi hum koi vlue dalenga to wo us ka root nikal ka de ga  
         
           cout<<"square root of alpha "<< endl;
            cout<<sqrrootn1<<endl;
@@ -184,11 +186,32 @@ cout<<p+a<<endl;
                cout<< sqrrootn2<<endl;
 
                sum_square_roots = (sqrrootn1+sqrrootn2);
-                 
-               power_of_sum=sqrt(sum_square_roots);
+               cout<<"sum of square root is"<<sum_square_roots<<endl;     
+
+
+
+
+               power_of_sum=sqrt(sum_square_roots+beta);
           cout<<"power of sum of square root and power"<<endl;
              cout<<power_of_sum<<endl;
 
+cout<<"base of triangle dalo"<<endl;
+  cin>>base;
 
+  
+
+  cout<<"hight of triangle dalo"<<endl;
+    cin>>hight;
+
+      sum_of_base_or_hight=pow(base,2)+pow(hight,2);
+
+  cout<<"value of hypotonous ha ";
+    hypotonous=sqrt(sum_of_base_or_hight);
+
+
+
+
+
+    
    return 0 ;
   } 
