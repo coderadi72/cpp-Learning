@@ -14,8 +14,8 @@ using king = char;
 int main ()
 {
      
-       int a,d,sum,price, age ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,an,sum_of_base_or_hight,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
+       int a,d,sum,price, umar ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
+      float pri,an,age,sum_of_base_or_hight,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -23,7 +23,7 @@ int main ()
       a = 99;
       d = 123; 
       u=9033;
-      age=16;
+      umar=16;
       year=2025;
       day=1.8;// yaha hum log implicit fxn use kar rahe ha is ma system apne ape chamge kar deta ha jaisa yaaha float ko int ma change kar diya 
       l=234;
@@ -50,7 +50,7 @@ int main ()
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
       //yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
-       string myage,yourname,username;
+       string myage,yourname,username,admin_name;
       
       sum =a+d;
     
@@ -204,14 +204,31 @@ cout<<"base of triangle dalo"<<endl;
     cin>>hight;
 
       sum_of_base_or_hight=pow(base,2)+pow(hight,2);
+      hypotonous=sqrt(sum_of_base_or_hight);
 
-  cout<<"value of hypotonous ha ";
-    hypotonous=sqrt(sum_of_base_or_hight);
+  cout<<"value of hypotonous ha "<<hypotonous<<endl;
+    
+
+     cout<<"enter your age "<<endl;
+      cin>>age;
 
 
+      if (age>=18){
+        cout<<"welcome to ye site"<<endl;
 
+      }
 
+      else{
+        cout<<"you are a minor/not old enough lill bro"<<endl;
+      }
 
+     
+     
+   cout<<"entre owner name "<<endl;
+      cin>>admin_name;
+       
+
+      if(admin_name=="ashura"){}
     
    return 0 ;
   } 
