@@ -15,7 +15,7 @@ int main ()
 {
      
        int a,d,sum,price, umar ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,an,age,sum_of_base_or_hight,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
+      float pri,an,age,answer,sum_of_base_or_hight,hypotanus_length,hight_length,base_lenght,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -193,7 +193,7 @@ cout<<p+a<<endl;
 
 
                power_of_sum=sqrt(sum_square_roots+gaama);
-          cout<<"power of sum of square root and power"<<endl;
+          cout<<"squareroot of sum of square root and power "<<endl;
              cout<<power_of_sum<<endl;
 
 cout<<"base of triangle dalo"<<endl;
@@ -214,48 +214,96 @@ cout<<"base of triangle dalo"<<endl;
       cin>>age;
 
 
-      if (age>=18){
-        cout<<"welcome to ye site"<<endl;
+      if (age>=18)// yha humlog apne program me ek condition dal rahae jo computer ko bolega ki har koi is condition ko follow karo 
+      {
+        cout<<"welcome to ye site"<<endl;//agaer humlog command ko follow karrrrrren gae to ya output aye gea
 
       }
 
-      else{
+      else//yaha jaab hum nhi follow karenga to wo hum ko output dega ki hum hum kuch galat kar rahe hai
+      {
         cout<<"you are a minor/not old enough lill bro"<<endl;
       }
 
      
      
-   cout<<"entre owner name "<<endl;
+   cout<<"entre owner name "<<endl;//apna user id dalenga 
       cin>>admin_name;
        
 
 
-    cout<<"enter your password"<<endl;
+    cout<<"enter your password"<<endl;// yaha hum password dalen gai
         cin>>password;
 
 
 
 
-      if(admin_name=="ashura" && password==" Ap@llen007")
+      if(admin_name=="ashura" && password=="Ap@llen007")// ya if statment ha 
       {
 
-          cout<<"hello and welcome aditya prakash to our server"<<endl;
+          cout<<"hello and welcome aditya prakash to our server"<<endl;// if ka output
            
 
        }
-        else if(admin_name=="lynnx" && password=="abhi9097"){
+        else if(admin_name=="lynnx" && password=="abhi9097") //ya else if statment ha ya ek multichoice if kitarah ki tarah hota ha ki agar if nhi hua to ya wala if
+        {
           
-          cout<<"hello and welcome abhinav prakash to our server"<<endl;
+          cout<<"hello and welcome abhinav prakash to our server"<<endl;// if else ka output
         }
           
-        else if(admin_name=="ravan" && password=="raone109"){
+        else if(admin_name=="ravan" && password=="raone109"){//second else if
           
-          cout<<"hello and welcome apurva raj to our server"<<endl;
+          cout<<"hello and welcome apurva raj to our server"<<endl;//second output 
         }
-        else{
+        else//ab aya else
+        {
           cout<<"access denied please make your account first or write a valid admin_name and password "<<endl;
         }
          
       
+           cout<< "chosse your sides"<<endl;
+
+            cout<<"hypotanus_length"<<endl;
+               cin>> hypotanus_length; 
+
+
+            cout<<"hight_length"<<endl;
+               cin>>hight_length;
+
+
+            cout<<"base_lenght"<<endl;
+               cin>>base_lenght;
+            
+         
+            if(hypotanus_length==0 && hight_length>0 &&base_lenght>0){
+
+               answer=sqrt(pow(hight_length,2)+pow(base_lenght,2));
+
+                  cout<<"length of hypotanus is "<<answer<<endl;}
+             
+           else if(hypotanus_length>0 && hight_length==0 && base_lenght>0 ) 
+           {
+
+               answer=sqrt(pow(hypotanus_length,2)-pow(base_lenght,2));
+
+           cout<<"length of hight is "<<answer<<endl;
+           
+              }
+
+             else if(hypotanus_length>0 && hight_length>0 && base_lenght==0 ) 
+           {
+
+               answer=sqrt(pow(hypotanus_length,2)-pow(hight_length,2));
+
+           cout<<"length of base is "<<answer<<endl;
+           
+              }
+
+             else{
+
+              cout<<"there is an invalid input plese put correct input"<<endl;
+             }
+
+
    return 0 ;
   } 
