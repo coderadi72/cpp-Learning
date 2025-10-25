@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include <string>//withn this we can write string with oout problem  
 #include<iomanip>
-#include<algorithm>
-#include<cmath>
+#include<algorithm>//is ko add karne sa hum && or== or <= add kar sakte ha bina kise error ka 
+#include<cmath>// ise ko add karnae ka baad hum log math ka kise oprection ko bina error ka add ar sakte ha 
 
 using namespace std;
-typedef string lol;
-using king = char;
+typedef string lol;// hum yaha typedef use kar ka hum string ka name badal dia or ud ko lol name dadiye
+using king = char;// yaha pa bhi hum type def use kiya ha par ya odinary typedef sa alag ha is mea hum kis ma koi specific fxn ka jagh hum uase fxn ka ek dusra name use kar rahe ha 
 
 
 
@@ -21,6 +21,7 @@ int main ()
       king hi ='%';
      
       a = 99;
+      
       d = 123; 
       u=9033;
       umar=16;
@@ -50,7 +51,7 @@ int main ()
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
       //yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
-       string myage,yourname,username,admin_name;
+       string myage,yourname,username,admin_name,password;
       
       sum =a+d;
     
@@ -191,7 +192,7 @@ cout<<p+a<<endl;
 
 
 
-               power_of_sum=sqrt(sum_square_roots+beta);
+               power_of_sum=sqrt(sum_square_roots+gaama);
           cout<<"power of sum of square root and power"<<endl;
              cout<<power_of_sum<<endl;
 
@@ -203,7 +204,7 @@ cout<<"base of triangle dalo"<<endl;
   cout<<"hight of triangle dalo"<<endl;
     cin>>hight;
 
-      sum_of_base_or_hight=pow(base,2)+pow(hight,2);
+      sum_of_base_or_hight=pow(base,2)+pow(hight,2); // getting hyotenus with power 
       hypotonous=sqrt(sum_of_base_or_hight);
 
   cout<<"value of hypotonous ha "<<hypotonous<<endl;
@@ -228,7 +229,33 @@ cout<<"base of triangle dalo"<<endl;
       cin>>admin_name;
        
 
-      if(admin_name=="ashura"){}
-    
+
+    cout<<"enter your password"<<endl;
+        cin>>password;
+
+
+
+
+      if(admin_name=="ashura" && password==" Ap@llen007")
+      {
+
+          cout<<"hello and welcome aditya prakash to our server"<<endl;
+           
+
+       }
+        else if(admin_name=="lynnx" && password=="abhi9097"){
+          
+          cout<<"hello and welcome abhinav prakash to our server"<<endl;
+        }
+          
+        else if(admin_name=="ravan" && password=="raone109"){
+          
+          cout<<"hello and welcome apurva raj to our server"<<endl;
+        }
+        else{
+          cout<<"access denied please make your account first or write a valid admin_name and password "<<endl;
+        }
+         
+      
    return 0 ;
   } 
