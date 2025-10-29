@@ -14,8 +14,8 @@ using king = char;// yaha pa bhi hum type def use kiya ha par ya odinary typedef
 int main ()
 {
      
-       int a,d,sum,price, umar ,year,day,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,an,age,answer,sum_of_base_or_hight,hypotanus_length,hight_length,base_lenght,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
+       int a,d,sum,price, umar ,year,days,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
+      float pri,an,age,answer,day,sum_of_base_or_hight,hypotanus_length,hight_length,base_lenght,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
       char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
@@ -26,7 +26,7 @@ int main ()
       u=9033;
       umar=16;
       year=2025;
-      day=1.8;// yaha hum log implicit fxn use kar rahe ha is ma system apne ape chamge kar deta ha jaisa yaaha float ko int ma change kar diya 
+      days=1.8;// yaha hum log implicit fxn use kar rahe ha is ma system apne ape chamge kar deta ha jaisa yaaha float ko int ma change kar diya 
       l=234;
       pri =6767.98;
       r=76.67;
@@ -51,7 +51,7 @@ int main ()
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
       //yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
-       string myage,yourname,username,admin_name,password;
+       string date,myage,yourname,username,admin_name,password;
       
       sum =a+d;
     
@@ -275,14 +275,18 @@ cout<<"base of triangle dalo"<<endl;
                cin>>base_lenght;
             
          
-            if(hypotanus_length==0 && hight_length>0 &&base_lenght>0){
+          if(hypotanus_length==0 && hight_length>0 &&base_lenght>0){
 
+          
                answer=sqrt(pow(hight_length,2)+pow(base_lenght,2));
 
-                  cout<<"length of hypotanus is "<<answer<<endl;}
-             
-           else if(hypotanus_length>0 && hight_length==0 && base_lenght>0 ) 
-           {
+                  cout<<"length of hypotanus is "<<answer<<endl;
+                        }
+
+
+    
+      else if(hypotanus_length>0 && hight_length==0 && base_lenght>0 ) {
+           
 
                answer=sqrt(pow(hypotanus_length,2)-pow(base_lenght,2));
 
@@ -290,8 +294,8 @@ cout<<"base of triangle dalo"<<endl;
            
               }
 
-             else if(hypotanus_length>0 && hight_length>0 && base_lenght==0 ) 
-           {
+             else if(hypotanus_length>0 && hight_length>0 && base_lenght==0 ) {
+           
 
                answer=sqrt(pow(hypotanus_length,2)-pow(hight_length,2));
 
@@ -303,6 +307,70 @@ cout<<"base of triangle dalo"<<endl;
 
               cout<<"there is an invalid input plese put correct input"<<endl;
              }
+              
+              cout<< "get days of week by entering from 1-7  ";
+                  cin>>date;
+
+
+         switch(days){
+
+
+
+          case 1:
+
+          cout<<"its is sunday";
+
+          break;
+
+           case 2:
+
+          cout<<"its is monday";
+
+          break;
+
+
+           case 3:
+
+          cout<<"its is tuesday";
+          break;
+
+
+           case 4:
+
+          cout<<"its is wednesday";
+
+          break;
+
+          case 5:
+
+          cout<<"its is thrusday";
+
+          break;
+
+           case 6:
+
+          cout<<"its is friday";
+
+          break;
+
+           case 7:
+
+          cout<<"its is saturday";
+
+          break;
+
+           default:
+           cout<<"please enter a valid date";
+
+
+         }
+         
+
+
+
+
+
+
 
 
    return 0 ;
