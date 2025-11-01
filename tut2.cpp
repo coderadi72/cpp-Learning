@@ -287,22 +287,30 @@ cout<<"base of triangle dalo"<<endl;
     
       else if(hypotanus_length>0 && hight_length==0 && base_lenght>0 ) {
            
-
-               answer=sqrt(pow(hypotanus_length,2)-pow(base_lenght,2));
+             if( base_lenght > hypotanus_length )
+                 cout<<"error = hypotanus length sa base lengrh jyada ha jo possible nahi ha!"<<endl;
+                     
+              else{  
+                 answer=sqrt(pow(hypotanus_length,2)-pow(base_lenght,2));
 
            cout<<"length of hight is "<<answer<<endl;
            
               }
+            }
 
              else if(hypotanus_length>0 && hight_length>0 && base_lenght==0 ) {
-           
+                
+             if( hight_length > hypotanus_length )
+                 cout<<"error = hypotanus length sa hight lengrh jyada ha jo possible nahi ha!"<<endl;
+                     
+              else{  
 
                answer=sqrt(pow(hypotanus_length,2)-pow(hight_length,2));
 
            cout<<"length of base is "<<answer<<endl;
            
               }
-
+            }
              else{
 
               cout<<"there is an invalid input plese put correct input"<<endl;
