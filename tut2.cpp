@@ -14,9 +14,9 @@ using king = char;// yaha pa bhi hum type def use kiya ha par ya odinary typedef
 int main ()
 {
      
-       int a,d,sum,price, umar ,year,days,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
-      float pri,an,age,answer,day,sum_of_base_or_hight,hypotanus_length,hight_length,base_lenght,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,num1,losser_num,num2, winner_num,cake,fcuk, tree,jam;//decimal
-      char x,mr,f,e,qw,p;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
+       int a,d,sum,price,num3,date,umar,year,days,u, l;//integer bass no. with no decimal or hum log agee mea - or + bhi laga sakte ha 4 byte ka space hi hoat ha is ka range (-2147483648 sa 2147483647 basa) 
+      float result,pri,an,age,answer,num1,num2,num4,num5,num6,num7,num8,your_answer,day,sum_of_base_or_hight,hypotanus_length,hight_length,base_lenght,base,hight,hypotonous, ant,sum_square_roots,value,alpha,given_no,power_of_sum,beta,gaama,sale_price,sqrrootn1,sqrrootn2,discount,umi,book,r,k,fan,mat,numr,losser_num,numu, winner_num,cake,fcuk, tree,jam;//decimal
+      char x,mr,f,e,qw,p,oprater,choice;//character if we put some thing other than i we will get ascii value or if we add it with integer it will use the character assinged value for the character hum log koi bhi character likh sakte ha compiller us ko libreary sa feach kar lega par wo ('') ma aa jata ha bina single cotatin ka nhi hoga ya code runn ma error show kare ga 
       bool m,bro,apple,pie;//only store true or false value kyu ki is ka ka space ek bit hi hota ha ya 0 or ya 1 hoga.
       king hi ='%';
      
@@ -51,7 +51,7 @@ int main ()
       lol my_name ="aditya"                    ;
       string name1= "hero@",name2="baba#",name3="car",inf="999";//it is a collection of character in which it contain letter ,digits ,symboles,and space but we can't write any fxn from the std liberery because it is alredy in the program so it will show error
       //yaha hum log explicet use kar rahe ha explesit mea hum log koi bhi variable ko kise or data type ka ho us ko hum log kise or data type ma use kar sakta ha jise hum log int data type ka variable ko boollian data type ma use kar sakte ha is ma human kise bhi data type ko change karta ha
-       string date,myage,yourname,username,admin_name,password;
+       string dates,myage,yourname,username,admin_name,password;
       
       sum =a+d;
     
@@ -152,13 +152,13 @@ cout<<p+a<<endl;
         cout<<"the final sale price ="<<sale_price<<endl;
         cin.ignore();
     cout<<" write your no. "<<endl;
-        cin >>num1;
+        cin >>numr;
     
         cout<<"write your second no. "<<endl;
-          cin>>num2;
+          cin>>numu;
 
-          winner_num= max(num1,num2);// max ka matalb ha ki ab agar tum do no. ko campare karo to tum ko un dono ma morethane kon ha bata daga 
-          losser_num= min(num1,num2); //min ka matlab hai ki ab agar tum do no ko compare karo to tum ko un ma less than kon ha pata chal jayaga 
+          winner_num= max(numr,numu);// max ka matalb ha ki ab agar tum do no. ko campare karo to tum ko un dono ma morethane kon ha bata daga 
+          losser_num= min(numr,numu); //min ka matlab hai ki ab agar tum do no ko compare karo to tum ko un ma less than kon ha pata chal jayaga 
  
           cout<<fixed<<setprecision(8);
         
@@ -312,7 +312,7 @@ cout<<"base of triangle dalo"<<endl;
                   cin>>date;
 
 
-         switch(days){
+         switch(date){
 
 
 
@@ -342,7 +342,6 @@ cout<<"base of triangle dalo"<<endl;
           break;
 
           case 5:
-
           cout<<"its is thrusday";
 
           break;
@@ -365,13 +364,84 @@ cout<<"base of triangle dalo"<<endl;
 
          }
          
+cout<<"****************calculater*******************"<<endl;
+    
+while(true){
+  
+  cout<<"enter either of the following  (+,-,/,*,% for percentage,s for square root,^ for power)"<<endl;
+     cin>>oprater;
 
+     if(oprater== '='){
+      cout<< "the answer for your calculation is "<<endl;
+         break;
+        }
 
+      if(oprater=='s'){
+        cout<<"enter a no for square root";
+        cin>>num1;
+        result= sqrt(num1);
+        cout<<"square root of your number is ="<<result<<endl;
+      }
+       
+      else{
+      cout<<"enter the first number you wants to calculate"<<endl;
+       cin>>num1;       
 
+      cout<<"enter the second number you wants to calculate"<<endl;
+       cin>>num2;       
+    
 
+        switch(oprater) 
+        {
+          case '+' : cout<< "result = "<<num1 + num2 << endl;break;
 
+          case '-' : cout<< "result = "<<num1 - num2 << endl;break;
 
+          case '*' : cout<< "result = "<<num1 * num2 << endl;break;
 
+          case '/' :
+          if (num2!=0) 
+          cout<< "result = "<<num1 / num2 << endl;
+          else
+          {
+          cout<<"error your dividing your number with 0  so the out come ise not defined";
+           } 
+           break;
 
+          case '%':
+          if (num2!=0) 
+          cout<< "result = "<<(num1 / num2)*100 <<"%"<< endl;
+          else
+          cout<<"error your dividing your number with 0  so the out come ise not defined";
+          break;
+         
+          case '^' : 
+          cout<<"enter your base number";
+          cin>>num1;
+           cout<<"enter your power number";
+          cin>>num2;
+          result=pow(num1,num2);
+          cout<< "result = "<< result<< endl;break;
+          
+          default:
+          cout<<"syntax error!";
+
+        }
+      }
+        cout<< "do you want to use calculator again ? "<<endl;
+        cout<<"(yes/no) if yes then type y / if no type n:";
+        cin>>choice;
+
+        if(choice=='n'||choice=='N'){
+          cout<<"goodluck!"<<endl;
+          break;
+
+        }
+      }
+         cout<<"put a no. to check if the no. is even or odd" <<endl;
+           cin>>num3;
+
+             (num3 % 2) ? cout<<"the no is odd"<<endl
+               : cout<<"the no. is even"<<endl;
    return 0 ;
-  } 
+  }
